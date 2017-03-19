@@ -12,7 +12,7 @@
 <header>
 <!--  Menu and slides  -->
     <div>
-        <nav class="navbar navbar-default">
+        <nav class="navbar navbar-default"  id="home">
           <div class="navbar-header">
            <img src="image/logo.png" alt="logo" class="img-responsive">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#gnavi">
@@ -26,11 +26,11 @@
           <div id="gnavi" class="collapse navbar-collapse navPosition">
             
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="">HOME</a></li>
-              <li><a href="">About</a></li>
-              <li><a href="">Rooms&amp;Rates</a></li>
-              <li><a href="">Breakfast</a></li>
-              <li><a href="">Contact</a></li>
+<!--              <li><a href="">HOME</a></li>-->
+              <li><a href="#index1">About</a></li>
+              <li><a href="#index2">Rooms&amp;Rates</a></li>
+              <li><a href="#index3">Breakfast</a></li>
+              <li><a href="#index4">Contact</a></li>
             </ul>
           </div>
         </nav>
@@ -65,25 +65,20 @@
 </header>
 
 <section id="index1" class="about">
-    <p>sdddddddddddhdjjkflkdlkdlkdlkdlkd</p>
-    <p>sdddddddddddhdjjkflkdlkdlkdlkdlkd</p>
-    <p>sdddddddddddhdjjkflkdlkdlkdlkdlkd</p>
-    <p>sdddddddddddhdjjkflkdlkdlkdlkdlkd</p>
-    <p>sdddddddddddhdjjkflkdlkdlkdlkdlkd</p>
-    <p>sdddddddddddhdjjkflkdlkdlkdlkdlkd</p>
-    <p>sdddddddddddhdjjkflkdlkdlkdlkdlkd</p>
-    <p>sdddddddddddhdjjkflkdlkdlkdlkdlkd</p>
-    <p>sdddddddddddhdjjkflkdlkdlkdlkdlkd</p>
-    <p>sdddddddddddhdjjkflkdlkdlkdlkdlkd</p>
-    <p>sdddddddddddhdjjkflkdlkdlkdlkdlkd</p>
-    <p>sdddddddddddhdjjkflkdlkdlkdlkdlkd</p>
-    <p>sdddddddddddhdjjkflkdlkdlkdlkdlkd</p>
-    <p>sdddddddddddhdjjkflkdlkdlkdlkdlkd</p>
-    <p>sdddddddddddhdjjkflkdlkdlkdlkdlkd</p>
+    <div>
+        <img src="image/marketas.png" alt="picture" width="80%">
+    </div>
+    <div class="intro relative">
+       <div class="centering width100">
+            <p>Located in the heart of downtown Victoria, Marketa's Bed and Breakfast offers a unique taste of traditional Edwardian comfort and hospitality, mixed with European flair. Inside the heritage home built in 1912, guests can experience the romance of hand-crafted four poster beds and air jetted tubs to beautifully decorated family-style rooms.</p>
+            <p>Choose from private or shared baths and queen or four-poster beds. Our B&amp;B accommodations offer the personal service and ambience of a bed and breakfast that our guests expect with an inn's charm.</p>
+            <p>So come, reserve a room at Marketa's Bed and Breakfast and see one of Victoria's best kept secrets for yourself.</p>
+        </div>
+    </div>
 </section>
 
 <section id="index2" class="room">
-    
+    <h2>Rooms &amp; Rates</h2>
 </section>
 
 <section id="index3" class="breakfast">
@@ -96,13 +91,30 @@
 
 <footer>
     <div class="goUpicon">   
-        <a href="#"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a href="#home"><span class="glyphicon glyphicon-arrow-up"></span></a>
     </div>
 </footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-<script>$('.carousel').carousel({interval: 4000})</script>
+<script>
+    //carousel timer
+    $('.carousel').carousel({interval: 4000})
+    
+    //smooth moving
+    $(function(){
+        $('a[href^=#]').click(function(){
+            var speed = 300;
+            var href= $(this).attr("href");
+            var target = $(href == "#" || href == "" ? 'html' : href);
+            var position = target.offset().top;
+            $("html, body").animate({scrollTop:position}, speed, "swing");
+            return false;
+            });
+    });
+    
+    
+</script>
 </body>
 </html>

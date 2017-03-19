@@ -11,7 +11,29 @@ body{
 section{
     width: 100%;
     max-width: 85%;
-    margin: 0 auto;
+    margin: 100px auto;
+//    border-bottom: 3px solid $sub-color;
+    h2{
+        text-align: center;
+        font-weight: 700;
+        font-size: 4em;
+        color: $sub-color;
+        
+        position: relative;
+//        display: inline-block;
+        padding: 0 55px;
+        &:before,&:after{
+            content: '';
+            position: absolute;
+            top: 50%;
+            display: inline-block;
+            width: 200px;
+            height: 4px;
+            background-color: $sub-color;
+            }
+        &:before{left:0;}
+        &:after{right: 0;}
+    }
 }
 
 .relative{
@@ -26,7 +48,15 @@ section{
     -webkit-transform: translate(-50%,-50%);
 }
 
+.width100{
+    width: 100%;
+}
+
 //header
+
+header{
+    margin-bottom: 40px;
+}
 
 .navbar-default{
     margin: 0;
@@ -71,6 +101,33 @@ header h1{
 }
 
 //Section 1
+.about{
+    display: flex;
+    
+    img{
+        width: 100%;
+    }
+    .intro{
+        width: 100%;
+        margin: 20px 0 0 30px;
+        font-size: 18px;
+    }
+}
+
+//Section 2
+.room{
+    
+}
+
+//Section 3
+.breakfast{
+    
+}
+
+//Section 4
+.contact{
+    
+}
 
 //footer
 footer{
