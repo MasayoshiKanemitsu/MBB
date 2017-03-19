@@ -7,10 +7,12 @@ section {
   max-width: 85%;
   margin: 100px auto; }
   section h2 {
+    margin-bottom: 100px;
     text-align: center;
     font-weight: 700;
     font-size: 4em;
     color: #5c554b;
+    text-shadow: 2px 2px #777;
     position: relative;
     padding: 0 55px; }
     section h2:before, section h2:after {
@@ -20,7 +22,8 @@ section {
       display: inline-block;
       width: 200px;
       height: 4px;
-      background-color: #5c554b; }
+      background-color: #5c554b;
+      box-shadow: 3px 3px #777; }
     section h2:before {
       left: 0; }
     section h2:after {
@@ -40,6 +43,11 @@ section {
 .width100 {
   width: 100%; }
 
+.box {
+  background-color: #5c554b;
+  box-shadow: 5px 5px #777;
+  color: #c7bda4; }
+
 header {
   margin-bottom: 40px; }
 
@@ -52,7 +60,8 @@ header {
     margin-left: 20px; }
   .navbar-default .navbar-nav > li > a {
     font-size: 1em;
-    font-weight: 700; }
+    font-weight: 700;
+    text-shadow: 1px 1px #222; }
 
 .navPosition {
   margin-right: 20px; }
@@ -80,12 +89,48 @@ header h1 {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
+  .about p {
+    color: #c7bda4;
+    padding: 5px 10px; }
+    .about p:first-letter {
+      font-size: 1.5em; }
   .about img {
     width: 100%; }
-  .about .intro {
+  .about .content1 {
     width: 100%;
     margin: 20px 0 0 30px;
     font-size: 18px; }
+
+.room .content2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+.room .flex-item {
+  padding: 10px;
+  width: 32%; }
+.room p {
+  font-size: 20px;
+  margin: 5px 0; }
+  .room p span {
+    font-weight: 700;
+    border-bottom: 1px solid #5c554b;
+    padding: 5px 0;
+    margin: 20px 0; }
+.room .content3 {
+  margin: 50px 0;
+  padding: 1px; }
+  .room .content3 p {
+    margin: 30px 40px; }
+    .room .content3 p:first-letter {
+      font-size: 1.5em; }
+  .room .content3 img {
+    display: block;
+    margin: 0 auto 30px auto; }
 
 footer .goUpicon {
   background-color: white;

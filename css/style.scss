@@ -1,5 +1,6 @@
 $main-color: rgb(199,189,164);
 $sub-color: rgb(92,85,75);
+$shadow:#777;
 
 //Common
 
@@ -14,11 +15,12 @@ section{
     margin: 100px auto;
 //    border-bottom: 3px solid $sub-color;
     h2{
+        margin-bottom: 100px;
         text-align: center;
         font-weight: 700;
         font-size: 4em;
         color: $sub-color;
-        
+        text-shadow: 2px 2px $shadow;
         position: relative;
 //        display: inline-block;
         padding: 0 55px;
@@ -30,6 +32,7 @@ section{
             width: 200px;
             height: 4px;
             background-color: $sub-color;
+            box-shadow: 3px 3px $shadow;
             }
         &:before{left:0;}
         &:after{right: 0;}
@@ -52,6 +55,12 @@ section{
     width: 100%;
 }
 
+.box{
+    background-color: $sub-color;
+    box-shadow: 5px 5px $shadow;
+    color: $main-color;
+}
+
 //header
 
 header{
@@ -69,6 +78,7 @@ header{
     .navbar-nav>li>a{
         font-size: 1em;
         font-weight: 700;
+        text-shadow: 1px 1px #222;
     }
 }
 
@@ -103,11 +113,15 @@ header h1{
 //Section 1
 .about{
     display: flex;
-    
+    p{
+        color: $main-color;
+        padding:5px 10px;
+        &:first-letter{font-size: 1.5em;}
+    }
     img{
         width: 100%;
     }
-    .intro{
+    .content1{
         width: 100%;
         margin: 20px 0 0 30px;
         font-size: 18px;
@@ -116,7 +130,36 @@ header h1{
 
 //Section 2
 .room{
-    
+    .content2{
+        display: flex;
+        justify-content: space-between;
+    }
+    .flex-item{
+        padding: 10px;
+        width: 32%;
+    }
+    p{
+        font-size: 20px;
+        margin: 5px 0;
+        span{
+           font-weight: 700;
+           border-bottom: 1px solid $sub-color;
+           padding: 5px 0;
+           margin: 20px 0;
+        }
+    }
+    .content3{
+        margin: 50px 0;
+        padding: 1px;
+        p{
+            margin: 30px 40px;
+            &:first-letter{font-size: 1.5em;}
+        }
+        img{
+            display: block;
+            margin: 0 auto 30px auto;
+        }
+    }
 }
 
 //Section 3
