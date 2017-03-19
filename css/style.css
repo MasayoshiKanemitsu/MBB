@@ -132,6 +132,9 @@ header h1 {
     display: block;
     margin: 0 auto 30px auto; }
 
+.breakfast .content4 img {
+  margin: 0 0 30px 0; }
+
 footer .goUpicon {
   background-color: white;
   width: 50px;
