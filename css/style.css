@@ -132,41 +132,48 @@ header h1 {
     display: block;
     margin: 0 auto 30px auto; }
 
+.breakfast h3 {
+  font-size: 36px;
+  text-align: center;
+  margin: 50px 0 70px 0;
+  font-weight: bold; }
 .breakfast .content4 img {
   margin: 0 0 30px 0; }
-.breakfast .content5 img {
-  width: 300px;
-  height: 300px;
-  margin: 50px 0;
-  object-fit: cover;
-  box-shadow: 4px 4px #5c554b; }
-.breakfast .content5 .menuText {
-  text-align: center;
-  color: #c7bda4;
-  position: absolute;
-  width: 300px;
-  height: 300px;
-  background-color: rgba(0, 0, 0, 0.8);
-  z-index: 10;
-  margin: 50px 0;
-  opacity: 0; }
-  .breakfast .content5 .menuText:hover {
-    opacity: 1;
-    -webkit-transition: opacity 0.4s ease-in;
-            transition: opacity 0.4s ease-in; }
-  .breakfast .content5 .menuText span {
-    display: block;
-    font-size: 24px;
-    font-weight: bold;
-    margin: 30px 0; }
-  .breakfast .content5 .menuText p {
-    font-size: 16px;
-    padding: 10px; }
+.breakfast .content5 {
+  display: none; }
+  .breakfast .content5 img {
+    width: 300px;
+    height: 300px;
+    margin: 30px 0;
+    object-fit: cover;
+    box-shadow: 4px 4px #5c554b; }
+  .breakfast .content5 .menuText {
+    text-align: center;
+    color: #c7bda4;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 10;
+    margin: 30px 0;
+    opacity: 0; }
+    .breakfast .content5 .menuText:hover {
+      opacity: 1;
+      -webkit-transition: opacity 0.4s ease-in;
+              transition: opacity 0.4s ease-in; }
+    .breakfast .content5 .menuText span {
+      display: block;
+      font-size: 24px;
+      font-weight: bold;
+      margin: 30px 0; }
+    .breakfast .content5 .menuText p {
+      font-size: 16px;
+      padding: 10px; }
 .breakfast #show {
   text-align: center;
   font-size: 3em;
   max-width: 350px;
-  margin: 0 auto; }
+  margin: 20px auto; }
   .breakfast #show:hover {
     box-shadow: none; }
 
@@ -185,6 +192,56 @@ footer .goUpicon {
 footer .glyphicon {
   top: 3px;
   left: 3px; }
+
+.appear {
+  -webkit-transform-origin: center top;
+      -ms-transform-origin: center top;
+          transform-origin: center top;
+  -webkit-animation: showUp 1s both;
+          animation: showUp 1s both; }
+
+@-webkit-keyframes showUp {
+  0% {
+    -webkit-transform: translate(0, -3em);
+            transform: translate(0, -3em);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    opacity: 1; } }
+
+@keyframes showUp {
+  0% {
+    -webkit-transform: translate(0, -3em);
+            transform: translate(0, -3em);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    opacity: 1; } }
+.d1 {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s; }
+
+.d2 {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s; }
+
+.d3 {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s; }
+
+.d4 {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s; }
+
+.d5 {
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s; }
+
+.d5 {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s; }
 
 @media all and (max-width: 768px) {
   .navbar-default img {

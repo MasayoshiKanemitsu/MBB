@@ -123,6 +123,7 @@
         <img src="image/6.jpg" alt="food" class="col-md-6 img-responsive">
         <img src="image/7.jpg" alt="food" class="col-md-6 img-responsive">
     </div>
+    <h3>Take a Great Morning</h3>
     <div id="show" class="box">Show More</div>
     <div class="content5 container-fluid">
         <div class="row">
@@ -131,21 +132,21 @@
                     <span>Eggs Benedict</span>
                     <p>This standard comes alive with Marketa's special homemade cheese sauce. Poached eggs over ham on an English crumpet with cheese sauce and garnished with herbs and spices. Fresh fruit on the side.</p>
                 </div>
-                <img src="image/menu/menu01.jpg" alt="menu" class="img-responsive relative">
+                <img src="image/menu/menu01.jpg" alt="menu" class="img-responsive">
             </div>
             <div class="col-md-4">
                <div class="menuText">
                     <span>Eggs Florentine</span>
                     <p>This simple treat, cooked to perfection. Poached eggs over spinach on an English crumpet with homemade cheese sauce, garnished with herbs and spices. Fresh fruit on the side.</p>
                 </div>
-                <img src="image/menu/menu02.jpeg" alt="menu" class="img-responsive relative">
+                <img src="image/menu/menu02.jpeg" alt="menu" class="img-responsive">
             </div>
             <div class="col-md-4">
                <div class="menuText">
                     <span>English Breakfast</span>
                     <p>A good hearty start to the day one of our guest's favourites. Eggs, any style, with bacon or ham, and toast. Fresh fruit on the side.</p>
                 </div>
-                <img src="image/menu/menu03.jpg" alt="menu" class="img-responsive relative">
+                <img src="image/menu/menu03.jpg" alt="menu" class="img-responsive">
             </div>
         </div>
         <div class="row">
@@ -203,7 +204,12 @@
             });
     });
     
-    
+    //Menu showing
+    function change(){
+        document.querySelector(".content5").style.display = "block";
+        document.querySelector(".content5").classList.add("appear");
+    }
+    document.querySelector("#show").addEventListener("click",change);
 </script>
 </body>
 </html>
