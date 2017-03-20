@@ -1,6 +1,11 @@
+@import url("_responsive.scss");
 body {
   background-color: #c7bda4;
   font-family: helvetica sans-serif; }
+
+main {
+  max-width: 1367px;
+  margin: 0 auto; }
 
 section {
   width: 100%;
@@ -20,7 +25,7 @@ section {
       position: absolute;
       top: 50%;
       display: inline-block;
-      width: 200px;
+      width: 15%;
       height: 4px;
       background-color: #5c554b;
       box-shadow: 3px 3px #777; }
@@ -48,11 +53,18 @@ section {
   box-shadow: 5px 5px #777;
   color: #c7bda4; }
 
+.responsiveImg {
+  display: none; }
+
 header {
   margin-bottom: 40px; }
 
+.navbar-header {
+  background-color: white; }
+
 .navbar-default {
-  margin: 0; }
+  margin: 0;
+  background-color: white; }
   .navbar-default img {
     width: 200px;
     vertical-align: middle;
@@ -177,7 +189,42 @@ header h1 {
   .breakfast #show:hover {
     box-shadow: none; }
 
-footer .goUpicon {
+.contact p {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0; }
+.contact form {
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px 0;
+  text-align: center; }
+  .contact form span {
+    font-size: 10px;
+    vertical-align: middle;
+    margin-left: 10px; }
+.contact input, .contact textarea, .contact button {
+  border: 1px solid #c7bda4;
+  margin: 5px 0 10px 0;
+  width: 400px;
+  background-color: #5c554b; }
+.contact button {
+  color: #c7bda4;
+  margin-bottom: 20px; }
+
+footer {
+  width: 100%;
+  color: #c7bda4;
+  text-align: center;
+  background-color: #5c554b; }
+  footer .info {
+    padding: 13px 0; }
+    footer .info p, footer .info address {
+      font-size: 16px; }
+    footer .info img {
+      margin: 5px 0;
+      width: 30px; }
+
+.goUpicon {
   background-color: white;
   width: 50px;
   height: 50px;
@@ -187,9 +234,12 @@ footer .goUpicon {
   bottom: 10px;
   font-size: 40px;
   opacity: 0.6; }
-  footer .goUpicon:hover {
-    opacity: 1; }
-footer .glyphicon {
+  .goUpicon:hover {
+    opacity: 1;
+    -webkit-animation: hopping 1s infinite;
+            animation: hopping 1s infinite; }
+
+.glyphicon {
   top: 3px;
   left: 3px; }
 
@@ -219,6 +269,26 @@ footer .glyphicon {
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
     opacity: 1; } }
+@-webkit-keyframes hopping {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); }
+  50% {
+    -webkit-transform: translate(0, 10px);
+            transform: translate(0, 10px); }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); } }
+@keyframes hopping {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); }
+  50% {
+    -webkit-transform: translate(0, 10px);
+            transform: translate(0, 10px); }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); } }
 .d1 {
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s; }
@@ -242,19 +312,5 @@ footer .glyphicon {
 .d5 {
   -webkit-animation-delay: 3s;
           animation-delay: 3s; }
-
-@media all and (max-width: 768px) {
-  .navbar-default img {
-    width: 200px;
-    vertical-align: middle;
-    margin: 0 auto;
-    display: block;
-    float: none; }
-  .navbar-default .navbar-nav > li > a {
-    font-size: 1.5em;
-    text-align: center; }
-
-  .navbar-toggle {
-    margin-top: -41px; } }
 
 /*# sourceMappingURL=style.css.map */

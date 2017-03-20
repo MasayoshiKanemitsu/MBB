@@ -1,0 +1,114 @@
+//iPad
+@media all and (max-width: 768px){
+    .navbar-default{
+    img{
+        width: 195px;
+        vertical-align: middle;
+        margin: 0 auto;
+        display: block;
+        float: none;
+    }
+    .navbar-nav>li>a{
+        font-size: 1.5em;
+        text-align: center;
+    }
+}
+    .navbar-toggle{
+        margin-top: -41px;
+    }
+    
+    header h1{
+        font-size: 35px;
+    }
+    
+    section h2{
+        &:before,&:after{
+            width: 10%;
+            }
+    }
+    
+    //About
+    .about{
+        flex-direction: column;
+        img{
+            width: 75%;
+            margin: -44px auto 0 auto;
+        }
+        .content1{
+            margin: 220px 0 160px 0;
+        }
+    }
+    
+    //rooms
+    .room{
+        .content2{
+            p{
+                font-size: 12px;
+            }
+        }
+    }
+    
+    //breakfast
+    .breakfast{
+        .menuText{
+            display: none;
+        }
+    }
+}
+
+//iphone
+
+@media all and (max-width: 380px){
+    header h1{
+        font-size: 20px;
+        margin: 0;
+    }
+    
+    section h2{
+        font-size: 1.5em;
+    }
+    
+    .responsiveImg{
+        display: block;
+        margin: 50px auto -15px auto;
+    }
+    
+    .about{
+        .img{
+            margin: -65px auto 0 auto;
+        }
+        .content1 {
+            margin: 341px 0 275px 0;
+            p{
+                font-size: 16px;
+            }
+        }
+    }
+    
+    .room{
+        .content2{
+            p{
+                font-size: 11px;
+            }
+        }
+        
+        .content3{
+            display: none;
+        }
+    }
+    
+    .breakfast{
+        h3{
+            font-size:22px;
+        }
+    }
+    
+    .contact{
+        form{
+            width: 70%;
+        }
+        input,textarea,button{
+            width: 100%;
+        }
+    }
+}
