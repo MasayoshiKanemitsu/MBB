@@ -1,5 +1,5 @@
 //iPad
-@media all and (max-width: 768px){
+@media all and (max-width: 767px){
     .navbar-default{
     img{
         width: 195px;
@@ -19,6 +19,7 @@
     
     header h1{
         font-size: 35px;
+        margin: -20px 0 0 0;
     }
     
     section h2{
@@ -54,11 +55,21 @@
             display: none;
         }
     }
+    
+    //contact
+    .contact{
+        form{
+            width: 70%;
+        }
+        input,textarea,button{
+            width: 100%;
+        }
+    }
 }
 
 //iphone
 
-@media all and (max-width: 380px){
+@media all and (max-width: 479px){
     header h1{
         font-size: 20px;
         margin: 0;

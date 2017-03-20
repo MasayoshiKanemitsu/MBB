@@ -1,4 +1,77 @@
-@import url("_responsive.scss");
+@media all and (max-width: 767px) {
+  .navbar-default img {
+    width: 195px;
+    vertical-align: middle;
+    margin: 0 auto;
+    display: block;
+    float: none; }
+  .navbar-default .navbar-nav > li > a {
+    font-size: 1.5em;
+    text-align: center; }
+
+  .navbar-toggle {
+    margin-top: -41px; }
+
+  header h1 {
+    font-size: 35px;
+    margin: -20px 0 0 0; }
+
+  section h2:before, section h2:after {
+    width: 10%; }
+
+  .about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .about img {
+      width: 75%;
+      margin: -44px auto 0 auto; }
+    .about .content1 {
+      margin: 220px 0 160px 0; }
+
+  .room .content2 p {
+    font-size: 12px; }
+
+  .breakfast .menuText {
+    display: none; }
+
+  .contact form {
+    width: 70%; }
+  .contact input, .contact textarea, .contact button {
+    width: 100%; } }
+@media all and (max-width: 479px) {
+  header h1 {
+    font-size: 20px;
+    margin: 0; }
+
+  section h2 {
+    font-size: 1.5em; }
+
+  .responsiveImg {
+    display: block;
+    margin: 50px auto -15px auto; }
+
+  .about .img {
+    margin: -65px auto 0 auto; }
+  .about .content1 {
+    margin: 341px 0 275px 0; }
+    .about .content1 p {
+      font-size: 16px; }
+
+  .room .content2 p {
+    font-size: 11px; }
+  .room .content3 {
+    display: none; }
+
+  .breakfast h3 {
+    font-size: 22px; }
+
+  .contact form {
+    width: 70%; }
+  .contact input, .contact textarea, .contact button {
+    width: 100%; } }
 body {
   background-color: #c7bda4;
   font-family: helvetica sans-serif; }
