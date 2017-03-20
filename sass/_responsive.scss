@@ -1,5 +1,5 @@
 //iPad
-@media all and (max-width: 767px){
+@media all and (max-width: 768px){
     .navbar-default{
     img{
         width: 195px;
@@ -51,6 +51,7 @@
     
     //breakfast
     .breakfast{
+        .content5{left: 0;}
         .menuText{
             display: none;
         }
